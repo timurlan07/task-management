@@ -14,5 +14,4 @@ public interface TaskRepository {
     void delete(Task id);
 
     List<Task> findAll();
-
 }

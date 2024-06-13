@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  task-management-app:
+    image: ${IMAGE_NAME}
+    container_name: ${CONTAINER_NAME}
+    env_file:
+      - compose.env
+    ports:
+      - ${CONTAINER_PORTS}
+    networks:
+      - task-management
+
+networks:
+  task-management:
+    attachable: true
+
